@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .control-button {
+            padding: 10px 15px;
+            margin-top: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .control-button:hover {
+            background-color: #0056b3;
+        }
+        .status {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>แดชบอร์ดควบคุม</h1>
+
+    <div class="section">
+        <h2>การดึงข้อมูลสมาชิก Telegram</h2>
+        <div class="mock-data">ข้อมูลสมาชิก: 100 คน</div>
+        <button class="control-button">เริ่มดึงข้อมูล</button>
+        <button class="control-button">หยุดดึงข้อมูล</button>
+        <div class="status">สถานะ: หยุด</div>
+    </div>
+
+    <div class="section">
+        <h2>การโพสต์อัตโนมัติ Facebook</h2>
+        <div class="mock-data">โพสต์ล่าสุด: "สวัสดีจากเราที่นี่!"</div>
+        <button class="control-button">กำหนดเวลาโพสต์</button>
+        <button class="control-button">ยกเลิกโพสต์</button>
+        <div class="status">สถานะ: ไม่มีโพสต์ที่กำหนดเวลา</div>
+    </div>
+
+    <div class="section">
+        <h2>การส่งข้อความ LINE OA</h2>
+        <div class="mock-data">ข้อความล่าสุด: "ยินดีต้อนรับสู่บริการของเรา!"</div>
+        <button class="control-button">ส่งข้อความ</button>
+        <button class="control-button">หยุดการส่งข้อความ</button>
+        <div class="status">สถานะ: ไม่มีข้อความที่กำลังส่ง</div>
+    </div>
+
+</body>
+</html>
